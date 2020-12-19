@@ -5,22 +5,16 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.Arrays;
-import java.util.Calendar;
+
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ResponseTest {
     private Response response;
-    private Calendar calendar;
 
     @BeforeEach
     public void initData(){
         response = new Response();
-        calendar = Calendar.getInstance();
-        calendar.set(Calendar.HOUR_OF_DAY, 0);
-        calendar.set(Calendar.MINUTE, 0);
-        calendar.set(Calendar.SECOND, 0);
-        calendar.set(Calendar.MILLISECOND, 0);
     }
 
     @ParameterizedTest
